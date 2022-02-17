@@ -1,4 +1,5 @@
-import { http } from "/dist/hooks/http.js"
+import { http } from "/dist/hooks/http.js";
+import { Dom, getElement } from "/dist/utilities.js";
 
 function render(data, id) {
   if (typeof data === 'string') {
@@ -31,4 +32,4 @@ function createElement(name, innerHTML, nodes) {
   return element;
 }
 
-export { render, createElement, http };
+export { render, createElement, http, getElement, Dom };
