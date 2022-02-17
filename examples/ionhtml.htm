@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<ion-body>
+  <ion-loader>
+  loading
+  </ion-loader>
+  <ion-app>
+     <div id="app"></div>
+     <script type="module">
+     import { createElement, render } from "/dist/ion.app.js";
+      render(createElement("h1", "Hello world"), "#app")
+     </script>
+  </ion-app>
+</ion-body>
