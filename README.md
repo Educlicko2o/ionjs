@@ -15,6 +15,10 @@ IonJs lets you develop innovative web apps within build firebase and supabase ho
 
 Documentation is on the way it will arrive by feb 25 IST.
 
+## Contributing
+
+Please read our [Contributing guidelines](./contributing.md) befor contribution to ionjs.
+
 ## Sponsoring
 
 Ionjs is a open source projects and completely free to use. The tremendous amount of effort needed to maintain the projects and coordinate the community efforts in the two ecosystems is only made sustainable thanks to the generous financial backing of our sponsors and backers. Please consider [sponsering ionjs development](https://www.patreon.com/educlickdev)
