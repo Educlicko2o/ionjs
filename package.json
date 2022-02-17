@@ -1,0 +1,25 @@
+{
+  "name": "ionjs",
+  "version": "0.1.5",
+  "description": "Enhancing your web app",
+  "main": "/dist/ion.app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Educlicko2o/ionjs.git"
+  },
+  "keywords": [
+    "ion",
+    "ionjs",
+    "js",
+    "library"
+  ],
+  "author": "Educlick",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Educlicko2o/ionjs/issues"
+  },
+  "homepage": "https://github.com/Educlicko2o/ionjs#readme"
+}
