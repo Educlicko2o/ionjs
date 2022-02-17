@@ -2,11 +2,12 @@
 <html>
   <head>
     <title>Hello World App</title>
+    <script src="/dist/ion.mapper.js" type="text/javascript" charset="utf-8"></script>
   </head>
   <body>
   <div id="app"></div>
   <script type="module">
-    import { createElement, render } from "/dist/ion.app.js";
+    import { createElement, render } from "@ion";
     render(createElement("h1", "Hello world"), "#app")
   </script>
   </body>

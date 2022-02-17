@@ -1,12 +1,16 @@
-import { http } from "/dist/hooks/http.js";
-import { Dom, getElement } from "/dist/utilities.js";
-import { ionHtml, customHtml } from "/dist/render.js";
+import { http } from "@ion/ajax";
+import { Dom, getElement } from "@ion/utilities";
+import { ionHtml, customHtml } from "@ion/render";
 
 new ionHtml().elements(true);
 
 Dom.onload(function () {
-  document.getElementById('ion-app').style.display = "block";
-  document.getElementById('ion-loader').style.display = "none";
+  if (document.querySelectorAll("ion-app").length !== 0) {
+    document.getElementById('ion-app').style.display = "block";
+  }
+  if (document.querySelectorAll("ion-loader").length !== 0) {
+    document.getElementById('ion-loader').style.display = "none";
+  }
 });
 
 function render(data, id) {

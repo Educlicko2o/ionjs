@@ -1,4 +1,4 @@
-export const getElement = function (element) {
+const getElement = function (element) {
   return {
     show: function () {
       document.querySelector(element).style.display = "intail";
@@ -37,7 +37,7 @@ export const getElement = function (element) {
   };
 };
 
-export const Dom = {
+const Dom = {
   load: (type, src, callback) => {
     if (type == "script") {
       var script = document.createElement('script');
@@ -115,3 +115,28 @@ export const Dom = {
     }
   }
 };
+
+function setFavico(favImg){
+    let headTitle = document.querySelector('head');
+    let favIcons = [
+        { rel: 'apple-touch-icon' },
+        { rel: 'apple-touch-startup-image' },
+        { rel: 'shortcut icon' }
+    ];
+    favIcons.forEach(function(favIcon){
+        let setFavicon = document.createElement('link');
+        setFavicon.setAttribute('rel', favIcon.rel);
+        setFavicon.setAttribute('class', 'favico');
+        setFavicon.setAttribute('href', favImg);
+        headTitle.appendChild(setFavicon);
+    });
+}
+
+function changeFavIco(url) {
+  const elements = document.querySelectorAll(".favico");
+  elements.forEach(function (element) {
+    element.setAttribute('href', url);
+  });
+}
+
+export { setFavico, changeFavIco, Dom, getElement };

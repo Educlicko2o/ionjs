@@ -1,4 +1,4 @@
-import { http } from "/dist/hooks/http.js"
+import { http } from "@ion/ajax"
 
 class ionHtml {
   elements(b) {
@@ -15,7 +15,7 @@ class ionHtml {
         `;
       });
       
-      let include = new customHtml("include-html");
+      let include = new customHtml("ion-include");
       include.define((element) => {
         http.get({
           url: element.getAttribute("from"),
@@ -23,18 +23,6 @@ class ionHtml {
             element.innerHTML = data;
           }
         });
-      });
-      
-      let body = new customHtml("ion-body");
-      body.define((element) => {
-        document.body.innerHTML = element.innerHTML;
-        element.remove();
-        document.body.style.cssText = `
-          padding: 0;
-          margin: 0;
-          width: 100%;
-          box-sizing: border-box;
-        `;
       });
       
       let loader = new customHtml("ion-loader");

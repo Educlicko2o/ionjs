@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<ion-body>
-  <ion-loader>
-  loading
-  </ion-loader>
-  <ion-app>
-     <div id="app"></div>
-     <script type="module">
-      import { ionHtml, ionActivity, appInterface, createElement, render  } from '/dist/ion.app.js';
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Ion Activity Example</title>
+    <script src="/dist/ion.mapper.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+  <body>
+    <ion-app>
+      <div id="app"></div>
+      <script type="module">
+      import { ionHtml, ionActivity, appInterface, createElement, render  } from '@ion';
       
       class activity extends ionActivity {
         constructor() {
@@ -23,5 +26,6 @@
       }
       appInterface(activity);
       </script>
-  </ion-app>
-</ion-body>
+    </ion-app>
+  </body>
+</html>
