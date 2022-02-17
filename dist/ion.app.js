@@ -1,3 +1,5 @@
+import { http } from "/dist/hooks/http.js"
+
 function render(data, id) {
   if (typeof data === 'string') {
     document.querySelector(id).innerHTMl = data;
@@ -29,4 +31,4 @@ function createElement(name, innerHTML, nodes) {
   return element;
 }
 
-export { render, createElement };
+export { render, createElement, http };
