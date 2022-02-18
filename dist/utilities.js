@@ -17,16 +17,30 @@ const getElement = function (element) {
     style: function (style) {
       document.querySelector(element).style.cssText = style;
     },
-    setAttribute: function (attribute) {
+    setAttribute: function (attribute, value) {
       if (typeof attribute === 'object') {
         Object.keys(attribute).forEach((key) => {
           document.querySelectorAll(element).forEach((element) => { 
             element.setAttribute(key, attribute[key]);
           });
         });
+      } else {
+        document.querySelector(element).setAttribute(attribute, value);
       }
     },
-    getAttribute: (key) => {
+    background: function (u) {
+      document.querySelector(element).style.background = u;
+    },
+    color: (u) => {
+      document.querySelector(element).style.color = u;
+    },
+    html: (html) => {
+      document.querySelector(element).innerHTML = html;
+    },
+    text: (text) => {
+      document.querySelector(element).innerTEXT = text;
+    },
+    getAttribute: (key) => { 
       return document.querySelector(element).getAttribute(key);
     },
     onclick: (fun) => {
