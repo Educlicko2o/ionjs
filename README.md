@@ -13,7 +13,7 @@ IonJs lets you develop innovative web apps within build firebase and supabase ho
 
 ## What will be included
 
-In the first beta of ionjs v0 will contain `ajax include html tag`, `ajax include attribute`, `loader screen or pre screen`, `firebase db`, `firebase auth`, `firebase storage`, `supabase db`. what you can do with ionjs v0 `custom components`, `easy ajax post and get function`, `easy dom functions`, `set favico`, `change favico` and more.
+In the first beta of ionjs v0 will contain `ajax include html tag`, `ajax include attribute`, `loader screen or pre screen`, `firebase db`, `firebase auth`, `firebase storage`. what you can do with ionjs v0 `custom components`, `easy ajax post and get function`, `easy dom functions`, `set favico`, `change favico` and more.
 
 In the second beta version ionjs will contain `virtual dom`, `cookie manager`, `local storage`, `session storage`, `a better render`, and more utily functions
 
