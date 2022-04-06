@@ -1,4 +1,4 @@
-export const http = {
+const http = {
   get: function (param) {
     const xhttp = new XMLHttpRequest();
     xhttp.onload = function() {
@@ -27,3 +27,5 @@ export const http = {
     }
   }
 };
+
+export default http;

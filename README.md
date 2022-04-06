@@ -13,15 +13,31 @@ IonJs lets you develop innovative web apps within build firebase and supabase ho
 
 ## What will be included
 
+<<<<<<< HEAD
 In the first beta of ionjs v0 will contain `ajax include html tag`, `ajax include attribute`, `loader screen or pre screen`, `firebase db`, `firebase auth`, `firebase storage`. what you can do with ionjs v0 `custom components`, `easy ajax post and get function`, `easy dom functions`, `set favico`, `change favico` and more.
+=======
+In the first beta of ionjs v0 will contain `ajax include html tag`, `loader screen or pre screen`, `firebase db`, `firebase auth`, `firebase storage`. what you can do with ionjs v0 `custom components`, `easy ajax post and get function`, `easy dom functions`, `set favico`, `change favico`, `app manifest render` beta, `bind` beta and more.
+>>>>>>> 05fb6ff (ion js basic version with updated mapper)
 
-In the second beta version ionjs will contain `virtual dom`, `cookie manager`, `local storage`, `session storage`, `a better render`, and more utily functions
+In the second beta version ionjs will contain `virtual dom`, `diectives` beta, `cookie manager`, `bind` final, `local storage`, `session storage`, `a better render`, `app manifest render` final, and more utily functions
 
-The final version may contain more utility, dom function and more frontent functions, more hooks and sql.
+The final version may contain more utility, dom function and more frontent functions, `directives` final more hooks and sql.
 
 ## Release
 
 the first beta version is expected to release in early Feb this year and the second is expected to release in late or mid feb, the final ionjs v0 will arrive in late feb or early April.
+
+## Include list
+
+- [x] ajax custom html (tested).
+- [x] preloading screen (tested).
+- [x] firebase db (tested).
+- [x] custom components (tested).
+- [x] ajax functions (tested).
+- [x] easy dom functions [pretty like jQuery] (tested).
+- [x] bind beta (tested).
+- [x] favicon functions (tested).
+- [x] 
 
 ## Documentation
 
