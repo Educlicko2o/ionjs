@@ -3,6 +3,7 @@ import Component from "@ion/component";
 import ionElement from "@ion/element";
 import Dom from "@ion/dom";
 import Constructor from "@ion/constructor";
+import setBinders from "@ion/dataBinder";
 
 export default function App(param) {
   var app = document.createElement("ion-root");
@@ -10,6 +11,9 @@ export default function App(param) {
     app.innerHTML = `<ion-include from='${param.template}'></ion-include>`;
   }
   document.body.appendChild(app);
+  if (!!param.dataset) {
+    setBinders(param.dataset);
+  }
 }
 
 Dom.onload(function () {
